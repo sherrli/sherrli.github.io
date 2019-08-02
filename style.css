@@ -69,8 +69,8 @@ p
   background-color: springgreen;
   /*place the button on another layer, specify the coordinates*/
   position: absolute;
-  top: 435px;
-  right: 270px;
+  top: 440px;
+  right: 440px;
 }
 
 .entermemes {
