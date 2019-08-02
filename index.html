@@ -3,6 +3,7 @@
 <head>
   <title>sherri li</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+
   <!-- Link to Google Analytics activity tracking -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145077563-1"></script>
@@ -10,8 +11,12 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
+
     gtag('config', 'UA-145077563-1');
+  </script>
+
+  <!-- Load external JS functions. -->
+  <script src="scripts/poweron.js">
   </script>
 
 </head>
@@ -19,33 +24,27 @@
 <body>
   <header>
     <!-- div's are used to group elements together. one can use css to format them collectively. -->
-    <div class="row">
+    <div id="homepage" class="row">
     <ul class="main-nav">
         <li><a href="docs/resume.pdf"> Resume </a></li>
         <li><a href="contact.html"> Contact </a></li>
         <li><a href="projects.html"> Projects </a></li>
         <li><a href="memes.html"> Stolen Memes </a></li>
-        <h1>Hello world! I'm Sherri.</h1>
-        <p>Sherri is a programmer based in San Jose who
-          <br> graduated from UCSC in 2019. She loves to learn
-          <br> new things, share knowledge with people, and
-          <br> bring cool ideas to life.
-        <br><br><br>Her current role model is AOC :) </p>
     </ul>
+    <!-- <h1>Hello world! I'm Sherri.</h1>
+    <p>Sherri is a programmer based in San Jose who
+      <br> graduated from UCSC in 2019. She loves to learn
+      <br> new things, share knowledge with people, and
+      <br> bring cool ideas to life.
+    <br><br><br>Her current role model is AOC :) </p> -->
     </div>
 
     <div class="wrapper">
       <!-- <form>
         <input type="button" value="Power On/Off" onclick="msg()">
       </form> -->
-      <button class="button button1" onclick="msg()">Power On/Off</button>
+      <button class="button button1" onclick="homeMsg()">Power On/Off</button>
     </div>
-
-    <script>
-    function msg() {
-      alert("BOO");
-    }
-    </script>
 
   </header>
 
