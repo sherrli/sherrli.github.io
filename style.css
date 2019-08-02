@@ -61,4 +61,16 @@ p
 
 .wrapper {
   text-align: center;
+
+}
+.button1 {
+  /*make the button oval-shaped*/
+  border-radius: 50%;
+}
+
+.entermemes {
+  text-align: center;
+}
+.button2 {
+
 }
