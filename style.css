@@ -58,3 +58,7 @@ p
   font-family: sans-serif;
   font-size: 14px;
 }
+
+.wrapper {
+  text-align: center;
+}
