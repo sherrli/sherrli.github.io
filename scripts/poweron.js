@@ -5,6 +5,7 @@ var timesClicked = 0;
 
 function homeMsg() {
   timesClicked++;
+  console.log("click count home " + timesClicked);
   if (timesClicked % 2 == 1) {
     homeOddClick();
   } else {
@@ -12,36 +13,43 @@ function homeMsg() {
   }
 }
 
-function contactMsg() {
+async function contactMsg() {
   timesClicked++;
-  if (timesClicked % 2 == 1) {
-    contactOddClick();
-  } else {
+  console.log("click count contact " + timesClicked);
+  // Always even turn off.
+  if (timesClicked % 2 == 0) {
+    // Shut down
     contactEvenClick();
+  } else {
+    // Turn on goes back to index, fully loaded (uses previously cached even counter)
+    window.open("index.html","_self");
   }
 }
 
 function projMsg() {
   timesClicked++;
-  if (timesClicked % 2 == 1) {
-    projOddClick();
-  } else {
+  console.log("click count projects " + timesClicked);
+  if (timesClicked % 2 == 0) {
+    // Shut down
     projEvenClick();
+  } else {
+    window.open("index.html","_self");
   }
 }
 
 function memeMsg() {
   timesClicked++;
   if (timesClicked % 2 == 1) {
-    memeOddClick();
+    memePowerOddClick();
   } else {
-    memeEvenClick();
+    memePowerEvenClick();
   }
 }
 
 //TODO: fix this. Should bring you back to home page, and load text.
 function returnHome() {
   window.open("index.html","_self");
+  //TODO: add a callback function
   homeOddClick();
 }
 
@@ -78,12 +86,8 @@ function displayNavBar() {
   document.getElementById("navbar").appendChild(memes);
 }
 
-function displayHome() {
-
-}
-
 function homeOddClick() {
-  displayNavBar()
+  displayNavBar();
 
   // display header text
   var hdr = document.createElement("h1");
@@ -126,34 +130,43 @@ function homeEvenClick() {
   text2.remove();
 }
 
-function contactOddClick() {
-
-  displayHome()
-
-}
-
 function contactEvenClick() {
-
-}
-
-function projOddClick() {
-
-  displayHome()
-
+  document.getElementById("navbar").innerHTML = "";
 }
 
 function projEvenClick() {
-
+  document.getElementById("navbar").innerHTML = "";
 }
 
-function memeOddClick() {
+function memePowerEvenClick() {
+  // The power must have already been turned on to be able to access Memes.
+  var definition = document.createElement("p");
+  var txt = document.createTextNode("Meme: \ noun \ an idea or behavior that spreads from person to person within a culture.");
+  definition.appendChild(document.createElement("br"));
+  definition.appendChild(document.createElement("br"));
+  definition.appendChild(txt);
+  document.getElementById("memetext").appendChild(definition);
+  var button = document.createElement("button");
+  button.innerHTML = "click for a meme";
+  document.getElementById("memetext").appendChild(button);
 
-  displayHome()
-
+  var credit = document.createElement("p");
+  var i;
+  for (i=0; i<18; i++) {
+    credit.appendChild(document.createElement("br"));
+  }
+  txt = document.createTextNode("Credit: Facebook group Mathematical Mathematics Memes.");
+  credit.appendChild(txt);
+  document.getElementById("memetext").appendChild(credit);
 }
 
-function memeEvenClick() {
-
-  displayNavBar()
-
+function memePowerOddClick() {
+  //document.getElementById("li").innerHTML = "";
+  // find text by the 'h1' and 'p' tags, and remove.
+  var text1 = document.getElementsByClassName("entermemes")[0];
+  var text2 = document.getElementsByTagName("p")[0];
+  var text3 = document.getElementsByTagName("p")[1];
+  text1.remove();
+  text2.remove();
+  text3.remove();
 }

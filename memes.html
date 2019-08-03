@@ -12,24 +12,21 @@
 
 <body>
   <header>
-    <div class="row">
-    <ul class="main-nav">
-        <!-- <li><a href="index.html"> Home </a></li> -->
-        <li onclick="returnHome()"><a href=""> Home </a></li>
+    <div id="memepage" class="row">
+    <ul id="navbar" class="main-nav">
+        <li><a onclick="returnHome();"> Home </a></li>
+        <!-- <li onclick="returnHome()"><a href=""> Home </a></li> -->
         <!-- TODO: Add async function to execute the returnHome() after click
       https://www.youtube.com/watch?v=PoRJizFvM7s -->
-
-        <p><br><br> Meme: \ noun \ an idea or behavior that spreads from person to person within a culture. </p>
-
     </ul>
     </div>
 
-    <div class="entermemes">
+    <div id="memetext" class="entermemes">
+      <p>Meme: \ noun \ an idea or behavior that spreads from person to person within a culture.</p>
       <button class="button button2" onclick="show()">click for a meme</button>
-    </div>
-
-    <p><br><br><br><br><br><br><br><br><br><br>
+      <p><br><br><br><br><br><br><br><br><br><br>
       Credit: Facebook group Mathematical Mathematics Memes.</p>
+    </div>
 
   <!--  <img src="memes/clopen.png" alt="the store is not closed, it has not opened yet" width="350" height="300">
     <img src="memes/complex.png" alt="have u ever looked at complex analysis plots and wondered if u are doing lsd?" width="350" height="300">
