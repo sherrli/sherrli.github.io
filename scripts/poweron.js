@@ -39,6 +39,12 @@ function memeMsg() {
   }
 }
 
+//TODO: fix this. Should bring you back to home page, and load text.
+function returnHome() {
+  window.open("index.html","_self");
+  homeOddClick();
+}
+
 // ------------------------------------------------------
 // Helper functions for displaying and removing elements.
 function displayNavBar() {
@@ -77,7 +83,6 @@ function displayHome() {
 }
 
 function homeOddClick() {
-
   displayNavBar()
 
   // display header text
