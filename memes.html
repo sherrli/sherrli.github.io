@@ -14,7 +14,8 @@
   <header>
     <div id="memepage" class="row">
     <ul id="navbar" class="main-nav">
-        <li><a onclick="returnHome();"> Home </a></li>
+      <!-- AJAX callback function -->
+        <li><a onclick="reloadHome(returnHome);"> Home </a></li>
         <!-- <li onclick="returnHome()"><a href=""> Home </a></li> -->
         <!-- TODO: Add async function to execute the returnHome() after click
       https://www.youtube.com/watch?v=PoRJizFvM7s -->
@@ -23,8 +24,8 @@
 
     <div id="memetext" class="entermemes">
       <p>Meme: \ noun \ an idea or behavior that spreads from person to person within a culture.</p>
-      <button class="button button2" onclick="show()">click for a meme</button>
-      <p><br><br><br><br><br><br><br><br><br><br>
+      <button class="button button2" onclick="displayMeme()">click for a meme</button>
+      <p><br><br><br><br><br><br><br><br><br><br><br><br><br>
       Credit: Facebook group Mathematical Mathematics Memes.</p>
     </div>
 
@@ -39,11 +40,6 @@
     <img src="memes/curve.jpg" alt="arbitrary curves are ditto" width="300" height="300">
     !-->
 
-    <script>
-    function show() {
-      alert("wip");
-    }
-    </script>
 
     <div class="wrapper">
       <button class="button button1" onclick="memeMsg()">Power On/Off</button>
