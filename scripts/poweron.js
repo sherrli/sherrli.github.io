@@ -33,16 +33,18 @@ function projMsg() {
     // Shut down
     projEvenClick();
   } else {
+    // Turn on
     window.open("index.html","_self");
   }
 }
 
 function memeMsg() {
   timesClicked++;
-  if (timesClicked % 2 == 1) {
-    memePowerOddClick();
+  console.log("click count memes " + timesClicked);
+  if (timesClicked % 2 == 0) {
+    memeEvenClick();
   } else {
-    memePowerEvenClick();
+    window.open("index.html","_self");
   }
 }
 
@@ -144,8 +146,13 @@ function projEvenClick() {
   document.getElementById("navbar").innerHTML = "";
 }
 
-function memePowerEvenClick() {
-  // The power must have already been turned on to be able to access Memes.
+function memeEvenClick() {
+  document.getElementById("navbar").innerHTML = "";
+  document.getElementById("memetext").innerHTML = "";
+}
+
+function memeOddClick() {
+  // Turns on power from the Memes page.
   var definition = document.createElement("p");
   var txt = document.createTextNode("Meme: \ noun \ an idea or behavior that spreads from person to person within a culture.");
   definition.appendChild(document.createElement("br"));
@@ -166,16 +173,6 @@ function memePowerEvenClick() {
   document.getElementById("memetext").appendChild(credit);
 }
 
-function memePowerOddClick() {
-  //document.getElementById("li").innerHTML = "";
-  // find text by the 'h1' and 'p' tags, and remove.
-  var text1 = document.getElementsByClassName("entermemes")[0];
-  var text2 = document.getElementsByTagName("p")[0];
-  var text3 = document.getElementsByTagName("p")[1];
-  text1.remove();
-  text2.remove();
-  text3.remove();
-}
 
 // Display a random meme in a new window in a new tab, upon click.
 function displayMeme() {
