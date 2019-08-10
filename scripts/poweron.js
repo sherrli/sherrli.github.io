@@ -48,16 +48,23 @@ function memeMsg() {
   }
 }
 
-// Return to index home page. Used as a callback function.
-function returnHome() {
+// TODO: Return to index home page, then run the callback function.
+function returnHome(callbackFcn) {
   window.open("index.html","_self");
+  callbackFcn();
+  //return true;
 }
 
-// Load home page when already powered on.
-function reloadHome(callback) {
-  callback();
 
-  homeOddClick();
+// HTML hack that mimics going to a url then running a script on that url.
+// Check the hash of the url and load the screen if you came here from another url.
+function displayHome() {
+  // timesClicked resets to 0 when you leave index.html
+  // So we have to set it back to 1.
+  if (window.location.hash === '#return') {
+    timesClicked++;
+    homeOddClick();
+  }
 }
 
 // ------------------------------------------------------
@@ -132,10 +139,17 @@ function homeEvenClick() {
   // remove navbar
   document.getElementById("navbar").innerHTML = "";
   // find text by the 'h1' and 'p' tags, and remove.
-  var text1 = document.getElementsByTagName("h1")[0];
-  var text2 = document.getElementsByTagName("p")[0];
-  text1.remove();
-  text2.remove();
+  // console.log(document.getElementsByTagName("h1"));
+  // console.log(document.getElementsByTagName("h2")[0]);
+  var textlist = document.getElementsByTagName("h1");
+  // while loop prevents double-printing of the text on the homepage.
+  while (textlist[0] !== undefined) {
+    textlist[0].remove();
+  }
+  while (document.getElementsByTagName("p")[0] !== undefined) {
+    var text2 = document.getElementsByTagName("p")[0];
+    text2.remove();
+  }
 }
 
 function contactEvenClick() {
