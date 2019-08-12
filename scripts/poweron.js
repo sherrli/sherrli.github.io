@@ -214,6 +214,6 @@ function displayMeme() {
   } else if (rng < 0.9) {
     window.open('memes/curve.jpg', '_blank');
   } else {
-    window.open('memes/category,jpg', '_blank');
+    window.open('memes/surjection.png', '_blank');
   }
 }
