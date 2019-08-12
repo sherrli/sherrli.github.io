@@ -75,6 +75,8 @@ function displayNavBar() {
   var a = document.createElement("a");
   a.textContent = "Resume";
   a.setAttribute('href', "docs/resume.pdf");
+  // Make the href open in a new tab
+  a.setAttribute('target', "_blank");
   resume.appendChild(a);
   // var $navbar = $('#navbar');
   document.getElementById("navbar").appendChild(resume);
