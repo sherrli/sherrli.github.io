@@ -238,25 +238,26 @@ function displayMeme() {
   } else {
     window.open('memes/surjection.png', '_blank');
   }
+}
 
-  // Displays two fighters on the screen, upon click.
-  function displayFighters() {
-    // Update this list when a new pokemon img is added.
-    var pokemonList = new Array("battle_contestants/budew.png", "battle_contestants/clobbopus.png", "battle_contestants/cloyster.png", "battle_contestants/ditto.png", "battle_contestants/dratini.png", "battle_contestants/ekans.png", "battle_contestants/gardevoir.png", "battle_contestants/gyarados.png", "battle_contestants/lickitung.png", "battle_contestants/lopunny.png", "battle_contestants/lucario.png", "battle_contestants/machamp.png", "battle_contestants/machoke.png", "battle_contestants/magikarp.png", "battle_contestants/metapod.png", "battle_contestants/muk.png", "battle_contestants/nidoking.png", "battle_contestants/nidoqueen.png", "battle_contestants/onix.png", "battle_contestants/persian.png", "battle_contestants/squirtle.png", "battle_contestants/tentacool.png", "battle_contestants/vaporeon.png", "battle_contestants/vulpix.png", "battle_contestants/weedle.png");
-    var div = document.getElementById("enterbattle");
-    // Clear images.
-    div.innerHTML = "";
-    // Generate random number in [0, 1), multiply by pokemon list length, then round result down to an int.
-    var rngOne = Math.floor(Math.random() * pokemonList.length);
-    var rngTwo = Math.floor(Math.random() * pokemonList.length);
-    // Based on rng, choose random contestants.
-    // const battleElements = document.querySelectorAll('div');
-    // battleElements.forEach((el) => el.style.display = 'none')
-    // battleElements[0].style.display = 'block';
-    var contestantOne = document.createElement('img');
-    var contestantTwo = document.createElement('img');
-    contestantOne.src = pokemonList[rngOne];
-    contestantTwo.src = pokemonList[rngTwo];
-    div.appendChild(contestantOne);
-    div.appendChild(contestantTwo);
+// Displays two fighters on the screen, upon click.
+function displayFighters() {
+  // Update this list when a new pokemon img is added.
+  var pokemonList = new Array("battle_contestants/budew.png", "battle_contestants/clobbopus.png", "battle_contestants/cloyster.png", "battle_contestants/ditto.png", "battle_contestants/dratini.png", "battle_contestants/ekans.png", "battle_contestants/gardevoir.png", "battle_contestants/gyarados.png", "battle_contestants/lickitung.png", "battle_contestants/lopunny.png", "battle_contestants/lucario.png", "battle_contestants/machamp.png", "battle_contestants/machoke.png", "battle_contestants/magikarp.png", "battle_contestants/metapod.png", "battle_contestants/muk.png", "battle_contestants/nidoking.png", "battle_contestants/nidoqueen.png", "battle_contestants/onix.png", "battle_contestants/persian.png", "battle_contestants/squirtle.png", "battle_contestants/tentacool.png", "battle_contestants/vaporeon.png", "battle_contestants/vulpix.png", "battle_contestants/weedle.png");
+  var div = document.getElementById("enterbattle");
+  // Clear images.
+  div.innerHTML = "";
+  // Generate random number in [0, 1), multiply by pokemon list length, then round result down to an int.
+  var rngOne = Math.floor(Math.random() * pokemonList.length);
+  var rngTwo = Math.floor(Math.random() * pokemonList.length);
+  // Based on rng, choose random contestants.
+  // const battleElements = document.querySelectorAll('div');
+  // battleElements.forEach((el) => el.style.display = 'none')
+  // battleElements[0].style.display = 'block';
+  var contestantOne = document.createElement('img');
+  var contestantTwo = document.createElement('img');
+  contestantOne.src = pokemonList[rngOne];
+  contestantTwo.src = pokemonList[rngTwo];
+  div.appendChild(contestantOne);
+  div.appendChild(contestantTwo);
 }
