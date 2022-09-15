@@ -255,6 +255,17 @@ function displayFighters() {
   var contestantTwo = document.createElement('img');
   contestantOne.src = pokemonList[rngOne];
   contestantTwo.src = pokemonList[rngTwo];
+  let nameOne = pokemonList[rngOne].replace("battle_contestants/","");
+  nameOne = nameOne.replace(".png","");
+  let nameTwo = pokemonList[rngTwo].replace("battle_contestants/","");
+  nameTwo = nameTwo.replace(".png","");
+  // Display pokemon
   div.appendChild(contestantOne);
   div.appendChild(contestantTwo);
+  // Print winner
+  console.log(nameOne+" beat "+nameTwo);
+  var p = document.createElement("p");
+  var txt = document.createTextNode(nameOne+" beat "+nameTwo);
+  p.appendChild(txt);
+  document.getElementById("enterbattle").appendChild(p);
 }

@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-/* header
+header
 {
   background-image: url(PinClipartPc.png);
   height: 100vh;
@@ -12,79 +12,36 @@
   background-size: contain;
   background-position: center;
   background-color: bisque;
-} */
-
-.container {
-  /* display: inline-block; */
-  position: relative;
-  /* height: 100%;
-  width: 100%; */
-  text-align: center;
-}
-
-.image {
-  height: 100%;
-  width: 100%;
-  background-color: bisque;
-  background-repeat: no-repeat;
-}
-
-.text {
-  position: absolute;
-  margin: 0px;
-  top: 7%;
-  left: 23%;
-}
-
-.num {
-  font-size: 70px;
 }
 
 h1
 {
-  color: BlanchedAlmond;
+  color: white;
   text-align: center;
   font-family: sans-serif;
-  font-size: 3vw;
-  position: absolute;
-  top: 20%;
-  left: 30%;
+  font-size: 30px;
+  padding: 50px;
 }
+
 
 p
 {
-  color: BlanchedAlmond;
+  color: white;
   text-align: center;
   font-family: sans-serif;
-  font-size: 1.6vw;
-  position: absolute;
-  top: 30%;
-  left: 30%;
-}
-
-.projects
-{
-  color: BlanchedAlmond;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 1.3vw;
-  position: absolute;
-  top: 30%;
-  left: 25%;
+  font-size: 12px;
+  padding: 10px;
 }
 
 .main-nav
 {
-  /* text-align: center; */
+  /*float: right;*/
+  text-align: center;
   list-style: none;
-  /* margin-top: 5px;
+  /*margin-top: 5px;*/
+  margin-left: 5px;
   margin-right: 5px;
-  padding: 30px; */
-  font-family: sans-serif;
-  font-size: 1.7vw;
-  position: absolute;
-  top: 10%;
-  left: 20%;
+  padding: 30px;
 }
 
 .main-nav li
@@ -94,50 +51,37 @@ p
 
 .main-nav li a
 {
-  color: white;
+  color: DarkSlateGray;
   text-decoration: none;
   /*padding: 5px 20px;*/
-  padding-left: 45px;
+  padding-left: 70px;
   font-family: sans-serif;
-  font-size: 1.7vw;
-  top: 10%;
-  left: 20%;
+  font-size: 14px;
 }
 
 .wrapper {
   text-align: center;
 
 }
-
-/* Power Button */
 .button1 {
   /*make the button oval-shaped*/
   border-radius: 50%;
   background-color: springgreen;
   /*place the button on another layer, specify the coordinates*/
   position: absolute;
-  top: 55%;
-  left: 80%;
+  top: 440px;
+  right: 440px;
   padding: 5px;
-  font-family: sans-serif;
-  font-size: 2vw;
 }
 
 .entermemes {
-  color: BlanchedAlmond;
-  /* text-align: center; */
-  font-family: sans-serif;
-  font-size: 1.5vw;
-  /* position: absolute; */
-  top: 30%;
-  left: 30%;
+  text-align: center;
 }
-/* Meme Generator Button */
+
+.enterbattle {
+  text-align: center;
+}
+
 .button2 {
-  position: absolute;
-  top: 37%;
-  left: 40%;
-  padding: 3px;
-  font-family: sans-serif;
-  font-size: 1.2vw;
+
 }

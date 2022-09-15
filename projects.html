@@ -11,30 +11,28 @@
 </head>
 
 <body>
-  <div class="container">
-    <img class="image" src="PinClipartPc.png"></img>
-    <h1> Projects </h1>
+  <header>
     <div class="row">
     <ul id="navbar" class="main-nav">
         <li><a href="index.html#return"> Home </a></li>
+        <h1> Projects </h1>
+        <p><a href="docs/PerceptronConvergencePaper.pdf" target="_blank" style="color:Cyan;"> Machine Learning Paper </a> - a proof that the Perceptron algorithm converges on
+          <br> a linearly separable dataset. It details how to train a Perceptron classifier (a one-layer neural network),
+          <br> and explains how to do feature extraction and cross validation. Ask me about kernel methods!
+
+        <br><br><a href="docs/tridiag_solver.m" target="_blank" style="color:Cyan;"> Tridiagonal Matrix Solver </a> - an Octave script that solves for vector x, given Ax=b.
+        <br> Implements LU decomposition, and represents nxn matrices as 1-dimensional vectors.
+        <br><br> For CS projects, check out my <a href="https://github.com/sherrli" target="_blank" style="color:Cyan;">GitHub</a>.
+       </p>
+
     </ul>
     </div>
-
-    <p class="projects"><a href="docs/PerceptronConvergencePaper.pdf" target="_blank" style="color:Cyan;"> Machine Learning Paper </a> - Prove the convergence of the Perceptron
-      <br> algorithm on a linearly separable dataset, demonstrate how to train a Perceptron classifier
-      <br> (a one-layer neural network), and explain feature extraction and cross validation.
-      <br> Ask me about kernel methods!
-
-    <br><br><a href="docs/tridiag_solver.m" target="_blank" style="color:Cyan;"> Tridiagonal Matrix Solver </a> - A script in Octave that solves for vector x, given Ax=b.
-    <br> Implements LU decomposition, and represents nxn matrices as 1-dimensional vectors.
-    <br><br> Find other projects on my <a href="https://github.com/sherrli" target="_blank" style="color:Cyan;">GitHub</a> !
-   </p>
 
     <div class="wrapper">
       <button class="button button1" onclick="projMsg(); homeOddClick();">Power</button>
     </div>
 
-  </div>
+  </header>
 
 </body>
 </html>
