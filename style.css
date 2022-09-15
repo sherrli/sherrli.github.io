@@ -71,11 +71,17 @@ p
   position: absolute;
   top: 440px;
   right: 440px;
+  padding: 5px;
 }
 
 .entermemes {
   text-align: center;
 }
+
+.enterbattle {
+  text-align: center;
+}
+
 .button2 {
 
 }
