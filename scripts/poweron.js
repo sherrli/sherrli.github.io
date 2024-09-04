@@ -131,20 +131,17 @@ function homeOddClick() {
 
   // display paragraph text
   var p = document.createElement("p");
-  var txt = document.createTextNode("Sherri is a programmer based in San Jose");
+  var txt = document.createTextNode("Sherri is a programmer based in San Jose.");
   p.appendChild(txt);
   p.appendChild(document.createElement("br"));
 
-  var txt = document.createTextNode("who graduated from UC Santa Cruz in 2019.");
+  var txt = document.createTextNode("She loves music, new technology, knowledge sharing,");
   p.appendChild(txt);
-  p.appendChild(document.createElement("br"));
-
-  var txt = document.createTextNode("She loves learning new tech, sharing knowledge,");
-  p.appendChild(txt)
   p.appendChild(document.createElement("br"));
 
   var txt = document.createTextNode("and bringing cool ideas to life.");
   p.appendChild(txt)
+
   p.appendChild(document.createElement("br"));
   p.appendChild(document.createElement("br"));
 
