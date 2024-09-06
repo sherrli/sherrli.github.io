@@ -208,30 +208,30 @@ function memeOddClick() {
 
 // Display a random meme in a new window in a new tab, upon click.
 function displayMeme() {
+  var memeList = new Array("", "")
+
+  var div = document.getElementById("memetext");
+  // Clear images.
+  div.innerHTML = "";
+
+  var memePicture = document.createElement('img');
+
+  // Based on rng, choose one of 10 random memes to display.
   // Generate random number in [0, 1).
   var rng = Math.random();
-  // Based on rng, choose one of 10 random memes to display.
-  if (rng < 0.1) {
-    window.open('memes/complex.png', '_blank');
-  } else if (rng < 0.2) {
-    window.open('memes/clopen.png', '_blank');
-  } else if (rng < 0.3) {
-    window.open('memes/euclidean.jpg', '_blank');
-  } else if (rng < 0.4) {
-    window.open('memes/ikea.png', '_blank');
-  } else if (rng < 0.5) {
-    window.open('memes/hamiltonian.jpg', '_blank');
-  } else if (rng < 0.6) {
-    window.open('memes/gt.jpg', '_blank');
-  } else if (rng < 0.7) {
-    window.open('memes/tmseries.jpg', '_blank');
-  } else if (rng < 0.8) {
-    window.open('memes/triplets.jpg', '_blank');
-  } else if (rng < 0.9) {
-    window.open('memes/curve.jpg', '_blank');
-  } else {
-    window.open('memes/surjection.png', '_blank');
-  }
+  var rngIndex = Math.floor(Math.random() * memeList.length);
+
+  // Display meme on page instead of new window.
+  memePicture.src = memeList[rngIndex];
+  div.appendChild(memePicture);
+
+  // if (rng < 0.1) {
+  //   window.open('memes/complex.png', '_blank');
+  // } else if (rng < 0.2) {
+  //   window.open('memes/clopen.png', '_blank');
+  // } else {
+  //   window.open('memes/surjection.png', '_blank');
+  // }
 }
 
 // Displays two fighters on the screen, upon click.
