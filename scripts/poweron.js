@@ -208,7 +208,21 @@ function memeOddClick() {
 
 // Display a random meme in a new window in a new tab, upon click.
 function displayMeme() {
-  var memeList = new Array("", "")
+  var memeList = new Array("memes/plane_4.jpg",
+"memes/plain_jane_read.jpeg",
+"memes/nymphia_boba.gif",
+"memes/plain_jane_Q.jpeg",
+"memes/ge_wechat.jpg",
+"memes/chungus_khan.jpg",
+"memes/rupaul_watch.jpeg",
+"memes/nymphia_fake.jpeg",
+"memes/yusuf_mom.jpg",
+"memes/undefined_gf.jpg",
+"memes/nancy_rap.jpg",
+"memes/broom_whack.jpg",
+"memes/rupaul_judging.png",
+"memes/nymphia_typical.png",
+"memes/primeape_inosuke.jpg")
 
   var div = document.getElementById("memetext");
   // Clear images.
