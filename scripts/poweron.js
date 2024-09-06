@@ -208,27 +208,25 @@ function memeOddClick() {
 
 // Display a random meme in a new window in a new tab, upon click.
 function displayMeme() {
-  var memeList = new Array("memes/plane_4.jpg",
-"memes/plain_jane_read.jpeg",
-"memes/nymphia_boba.gif",
-"memes/plain_jane_Q.jpeg",
-"memes/ge_wechat.jpg",
+  var memeList = new Array("memes/broom_whack.jpg",
 "memes/chungus_khan.jpg",
-"memes/rupaul_watch.jpeg",
-"memes/nymphia_fake.jpeg",
-"memes/yusuf_mom.jpg",
-"memes/undefined_gf.jpg",
+"memes/ge_wechat.jpg",
 "memes/nancy_rap.jpg",
-"memes/broom_whack.jpg",
-"memes/rupaul_judging.png",
+"memes/nymphia_boba.gif",
+"memes/nymphia_fake.jpeg",
 "memes/nymphia_typical.png",
-"memes/primeape_inosuke.jpg")
+"memes/plain_jane_Q.jpeg",
+"memes/plain_jane_read.jpeg",
+"memes/plane_4.jpg",
+"memes/primeape_inosuke.jpg",
+"memes/rupaul_judging.png",
+"memes/rupaul_watch.jpeg",
+"memes/undefined_gf.jpg",
+"memes/yusuf_mom.jpg")
 
   var div = document.getElementById("memetext");
   // Clear images.
   div.innerHTML = "";
-
-  var memePicture = document.createElement('img');
 
   // Based on rng, choose one of 10 random memes to display.
   // Generate random number in [0, 1).
@@ -236,7 +234,10 @@ function displayMeme() {
   var rngIndex = Math.floor(Math.random() * memeList.length);
 
   // Display meme on page instead of new window.
+  var memePicture = document.createElement('img');
   memePicture.src = memeList[rngIndex];
+  // debug print statement
+  console.log("memeList[rngIndex]");
   div.appendChild(memePicture);
 
   // if (rng < 0.1) {
