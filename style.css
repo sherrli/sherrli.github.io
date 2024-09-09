@@ -75,7 +75,9 @@ p
 }
 
 .container img {
-  object-fit: cover; /*contain;*/
+  width: 200px;
+  height: 300px;
+  object-fit: contain; /*cover;*/
   text-align: center;
 }
 
