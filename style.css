@@ -74,7 +74,8 @@ p
   padding: 5px;
 }
 
-.entermemes {
+.container img {
+  object-fit: cover; /*contain;*/
   text-align: center;
 }
 

@@ -200,8 +200,7 @@ function memeOddClick() {
   for (i=0; i<18; i++) {
     credit.appendChild(document.createElement("br"));
   }
-  txt = document.createTextNode("Credit: Facebook group Mathematical Mathematics Memes.");
-  credit.appendChild(txt);
+
   document.getElementById("memetext").appendChild(credit);
 }
 
