@@ -22,14 +22,19 @@
     </ul>
     </div>
 
-    <div id="memetext" class="container">
-      <p>Meme: \ noun \ an idea or behavior that spreads from person to person within a culture.</p>
-      <button class="button button2" onclick="displayMeme()">click for a meme</button>
+    <div id="memetext" class="meme">
+      <button class="button meme-button" onclick="displayMeme()">click me</button>
+      <p><br></p>
+      <div id="memeimage" class="memeimage">
+        <!-- image goes here -->
+      </div>
       <p><br></p>
     </div>
 
     <div class="wrapper">
-      <button class="button button1" onclick="memeMsg(); homeOddClick();">Power</button>
+      <button class="button power-button" onclick="memeMsg(); homeOddClick();">
+        <img src="power-icon.png">
+      </button>
     </div>
 
   </header>
