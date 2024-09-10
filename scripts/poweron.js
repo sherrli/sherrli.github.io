@@ -125,24 +125,24 @@ function homeOddClick() {
 
   // display header text
   var hdr = document.createElement("h1");
-  var txt = document.createTextNode("Hello world! I'm Sherri.");
+  var txt = document.createTextNode("hello world! i'm sherri.");
   hdr.appendChild(txt);
   document.getElementById("homepage").appendChild(hdr);
 
   // display paragraph text
   var p = document.createElement("p");
-  var txt = document.createTextNode("Sherri is a programmer based in San Jose.");
+  var txt = document.createTextNode("sherri is an aspiring programmer based in san jose.");
   p.appendChild(txt);
   p.appendChild(document.createElement("br"));
 
-  var txt = document.createTextNode("She loves music, new technology, knowledge sharing,");
+  var txt = document.createTextNode("she has worked in QA automation + performance testing.");
   p.appendChild(txt);
   p.appendChild(document.createElement("br"));
 
-  var txt = document.createTextNode("and bringing cool ideas to life.");
+  var txt = document.createTextNode("aside from work, she loves playing farming sim games and music.");
   p.appendChild(txt)
-
   p.appendChild(document.createElement("br"));
+
   p.appendChild(document.createElement("br"));
 
   document.getElementById("homepage").appendChild(p);
@@ -175,7 +175,7 @@ function projEvenClick() {
 
 function memeEvenClick() {
   document.getElementById("navbar").innerHTML = "";
-  document.getElementById("memetext").innerHTML = "";
+  document.getElementById("memeimage").innerHTML = "";
 }
 
 function battleEvenClick() {
@@ -186,7 +186,6 @@ function battleEvenClick() {
 function memeOddClick() {
   // Turns on power from the Memes page.
   var definition = document.createElement("p");
-  var txt = document.createTextNode("Meme: \ noun \ an idea or behavior that spreads from person to person within a culture.");
   definition.appendChild(document.createElement("br"));
   definition.appendChild(document.createElement("br"));
   definition.appendChild(txt);
@@ -208,22 +207,19 @@ function memeOddClick() {
 // Display a random meme in a new window in a new tab, upon click.
 function displayMeme() {
   var memeList = new Array("memes/broom_whack.jpg",
-"memes/chungus_khan.jpg",
-"memes/ge_wechat.jpg",
 "memes/nancy_rap.jpg",
 "memes/nymphia_boba.gif",
 "memes/nymphia_fake.jpeg",
 "memes/nymphia_typical.png",
 "memes/plain_jane_Q.jpeg",
 "memes/plain_jane_read.jpeg",
-"memes/plane_4.jpg",
 "memes/primeape_inosuke.jpg",
 "memes/rupaul_judging.png",
 "memes/rupaul_watch.jpeg",
 "memes/undefined_gf.jpg",
 "memes/yusuf_mom.jpg")
 
-  var div = document.getElementById("memetext");
+  var div = document.getElementById("memeimage");
   // Clear images.
   div.innerHTML = "";
 
@@ -238,14 +234,6 @@ function displayMeme() {
   // debug print statement
   console.log("memeList[rngIndex]");
   div.appendChild(memePicture);
-
-  // if (rng < 0.1) {
-  //   window.open('memes/complex.png', '_blank');
-  // } else if (rng < 0.2) {
-  //   window.open('memes/clopen.png', '_blank');
-  // } else {
-  //   window.open('memes/surjection.png', '_blank');
-  // }
 }
 
 // Displays two fighters on the screen, upon click.

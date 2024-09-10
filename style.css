@@ -63,21 +63,45 @@ p
   text-align: center;
 
 }
-.button1 {
+.power-button {
   /*make the button oval-shaped*/
   border-radius: 50%;
-  background-color: springgreen;
   /*place the button on another layer, specify the coordinates*/
   position: absolute;
   top: 440px;
   right: 440px;
-  padding: 5px;
+  position: fixed; /* keep the button in the same place relative to the viewport*/
+  width: 20px;
+  height: 20px;
 }
 
-.container img {
-  width: 200px;
-  height: 300px;
+.power-button img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.meme {
+  width: 250px;
+  height: 100px;
   object-fit: contain; /*cover;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.memeimage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /*cover;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -86,5 +110,9 @@ p
 }
 
 .button2 {
+
+}
+
+.meme-button {
 
 }
