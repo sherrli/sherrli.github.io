@@ -125,21 +125,21 @@ function homeOddClick() {
 
   // display header text
   var hdr = document.createElement("h1");
-  var txt = document.createTextNode("hello world! i'm sherri.");
+  var txt = document.createTextNode("hello world! i'm sherri..");
   hdr.appendChild(txt);
   document.getElementById("homepage").appendChild(hdr);
 
   // display paragraph text
   var p = document.createElement("p");
-  var txt = document.createTextNode("sherri is an aspiring programmer based in san jose.");
+  var txt = document.createTextNode("..an aspiring programmer based in san jose.");
   p.appendChild(txt);
   p.appendChild(document.createElement("br"));
 
-  var txt = document.createTextNode("she has worked in QA automation + performance testing.");
+  var txt = document.createTextNode("who has worked in QA automation + performance testing.");
   p.appendChild(txt);
   p.appendChild(document.createElement("br"));
 
-  var txt = document.createTextNode("aside from work, she loves playing farming sim games and music.");
+  var txt = document.createTextNode("aside from work, she loves new music and pixel games.");
   p.appendChild(txt)
   p.appendChild(document.createElement("br"));
 
