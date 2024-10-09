@@ -131,7 +131,7 @@ function homeOddClick() {
 
   // display paragraph text
   var p = document.createElement("p");
-  var txt = document.createTextNode("..an aspiring programmer based in san jose.");
+  var txt = document.createTextNode("..an aspiring programmer from san jose.");
   p.appendChild(txt);
   p.appendChild(document.createElement("br"));
 
@@ -139,7 +139,7 @@ function homeOddClick() {
   p.appendChild(txt);
   p.appendChild(document.createElement("br"));
 
-  var txt = document.createTextNode("aside from work, she loves new music and pixel games.");
+  var txt = document.createTextNode("outside of work, she likes new music and games.");
   p.appendChild(txt)
   p.appendChild(document.createElement("br"));
 
