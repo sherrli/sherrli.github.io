@@ -19,7 +19,7 @@
 /* Must declare background-image before background-color. */
 header
 {
-  background-image: url(pc_monitor.png);
+  background-image: url(clipart_pc.png);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: contain;
@@ -30,17 +30,16 @@ header
 
 h1
 {
-  color: black;
+  color: white;
   text-align: center;
   font-family: sans-serif;
   font-size: 30px;
   padding: 50px;
 }
 
-
 p
 {
-  color: black;
+  color: white;
   text-align: center;
   font-family: sans-serif;
   font-size: 12px;
@@ -53,7 +52,7 @@ p
   text-align: center;
   list-style: none;
   /*margin-top: 5px;*/
-  margin-left: 5px;
+  margin-left: 3px;
   margin-right: 5px;
   padding: 30px;
 }
@@ -61,14 +60,15 @@ p
 .main-nav li
 {
   display: inline-block;
+  height: 7vh;
 }
 
 .main-nav li a
 {
-  color: DarkSlateGray;
+  color: white;
   text-decoration: none;
   /*padding: 5px 20px;*/
-  padding-left: 70px;
+  padding-left: 67px;
   font-family: sans-serif;
   font-size: 14px;
 }
